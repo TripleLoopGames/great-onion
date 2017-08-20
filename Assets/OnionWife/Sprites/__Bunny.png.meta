@@ -1,0 +1,926 @@
+fileFormatVersion: 2
+guid: 1c0bcd2586ff3254d907023322e2e995
+timeCreated: 1499367910
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bunnysheet5_0
+    21300002: bunnysheet5_1
+    21300004: bunnysheet5_2
+    21300006: bunnysheet5_3
+    21300008: bunnysheet5_4
+    21300010: bunnysheet5_5
+    21300012: bunnysheet5_6
+    21300014: bunnysheet5_7
+    21300016: bunnysheet5_8
+    21300018: bunnysheet5_9
+    21300020: bunnysheet5_10
+    21300022: bunnysheet5_11
+    21300024: bunnysheet5_12
+    21300026: bunnysheet5_13
+    21300028: bunnysheet5_14
+    21300030: bunnysheet5_15
+    21300032: bunnysheet5_16
+    21300034: bunnysheet5_17
+    21300036: bunnysheet5_18
+    21300038: bunnysheet5_19
+    21300040: bunnysheet5_20
+    21300042: bunnysheet5_21
+    21300044: bunnysheet5_22
+    21300046: bunnysheet5_23
+    21300048: bunnysheet5_24
+    21300050: bunnysheet5_25
+    21300052: bunnysheet5_26
+    21300054: bunnysheet5_27
+    21300056: bunnysheet5_28
+    21300058: bunnysheet5_29
+    21300060: bunnysheet5_30
+    21300062: bunnysheet5_31
+    21300064: bunnysheet5_32
+    21300066: bunnysheet5_33
+    21300068: bunnysheet5_34
+    21300070: bunnysheet5_35
+    21300072: bunnysheet5_36
+    21300074: bunnysheet5_37
+    21300076: bunnysheet5_38
+    21300078: bunnysheet5_39
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 143, w: 137}
+  spritePixelsToUnits: 10
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bunnysheet5_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 284
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_1
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 285
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_2
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 249
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_3
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 249
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_4
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 249
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_5
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 252
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_6
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 249
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_7
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 251
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_8
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 252
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_9
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 252
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_10
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 202
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_11
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 203
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_12
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 161
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_14
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 157
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_15
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 160
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_16
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 161
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_17
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 162
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_18
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 162
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_19
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 163
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_20
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 120
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_21
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 123
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_22
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 82
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_23
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 83
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_24
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 82
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_25
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 84
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_26
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 84
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_27
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 84
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_28
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 84
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_29
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 84
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_30
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 46
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_31
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 43
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_32
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 11
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_33
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 11
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 11
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_35
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 11
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_36
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 11
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_37
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 11
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_38
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 12
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bunnysheet5_39
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 13
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline:
+    - - {x: -125.5, y: -123.5}
+      - {x: -135.5, y: -133.5}
+      - {x: -135.5, y: -145.5}
+      - {x: -131.5, y: -154.5}
+      - {x: -106.5, y: -154.5}
+      - {x: -106.5, y: -140.5}
+      - {x: -115.5, y: -123.5}
+    - - {x: -93.5, y: -122.5}
+      - {x: -101.5, y: -135.5}
+      - {x: -101.5, y: -148.5}
+      - {x: -98.5, y: -154.5}
+      - {x: -72.5, y: -154.5}
+      - {x: -71.5, y: -151.5}
+      - {x: -71.5, y: -138.5}
+      - {x: -82.5, y: -122.5}
+    - - {x: -66.5, y: -154.5}
+      - {x: -29.5, y: -154.5}
+      - {x: -29.5, y: -140.5}
+      - {x: -39.5, y: -122.5}
+      - {x: -55.5, y: -122.5}
+      - {x: -66.5, y: -135.5}
+    - - {x: -24.5, y: -152.5}
+      - {x: -23.5, y: -154.5}
+      - {x: 3.5, y: -154.5}
+      - {x: 8.5, y: -153.5}
+      - {x: 8.5, y: -133.5}
+      - {x: 7.5, y: -127.5}
+      - {x: 0.5, y: -125.5}
+      - {x: -20.5, y: -125.5}
+      - {x: -24.5, y: -131.5}
+    - - {x: 24.5, y: -125.5}
+      - {x: 20.5, y: -127.5}
+      - {x: 15.5, y: -138.5}
+      - {x: 15.5, y: -148.5}
+      - {x: 22.5, y: -154.5}
+      - {x: 42.5, y: -154.5}
+      - {x: 45.5, y: -148.5}
+      - {x: 45.5, y: -138.5}
+      - {x: 34.5, y: -125.5}
+    - - {x: 73.5, y: -136.5}
+      - {x: 64.5, y: -128.5}
+      - {x: 55.5, y: -128.5}
+      - {x: 45.5, y: -139.5}
+      - {x: 45.5, y: -153.5}
+      - {x: 49.5, y: -154.5}
+      - {x: 73.5, y: -154.5}
+      - {x: 76.5, y: -145.5}
+      - {x: 76.5, y: -140.5}
+    - - {x: 98.5, y: -130.5}
+      - {x: 83.5, y: -130.5}
+      - {x: 77.5, y: -143.5}
+      - {x: 77.5, y: -152.5}
+      - {x: 80.5, y: -153.5}
+      - {x: 105.5, y: -153.5}
+      - {x: 109.5, y: -147.5}
+      - {x: 109.5, y: -140.5}
+      - {x: 107.5, y: -134.5}
+    - - {x: 134.5, y: -129.5}
+      - {x: 119.5, y: -129.5}
+      - {x: 112.5, y: -138.5}
+      - {x: 112.5, y: -147.5}
+      - {x: 115.5, y: -152.5}
+      - {x: 140.5, y: -152.5}
+      - {x: 144.5, y: -146.5}
+      - {x: 144.5, y: -137.5}
+      - {x: 143.5, y: -131.5}
+    - - {x: -20.5, y: -93.5}
+      - {x: -23.5, y: -94.5}
+      - {x: -25.5, y: -97.5}
+      - {x: -25.5, y: -120.5}
+      - {x: -24.5, y: -122.5}
+      - {x: 4.5, y: -122.5}
+      - {x: 7.5, y: -117.5}
+      - {x: 7.5, y: -108.5}
+      - {x: -3.5, y: -93.5}
+    - - {x: -95.5, y: -89.5}
+      - {x: -103.5, y: -98.5}
+      - {x: -103.5, y: -119.5}
+      - {x: -73.5, y: -119.5}
+      - {x: -73.5, y: -97.5}
+      - {x: -75.5, y: -89.5}
+    - - {x: -124.5, y: -52.5}
+      - {x: -134.5, y: -66.5}
+      - {x: -134.5, y: -78.5}
+      - {x: -131.5, y: -83.5}
+      - {x: -110.5, y: -83.5}
+      - {x: -105.5, y: -77.5}
+      - {x: -105.5, y: -64.5}
+      - {x: -113.5, y: -52.5}
+    - - {x: -57.5, y: -51.5}
+      - {x: -71.5, y: -72.5}
+      - {x: -71.5, y: -83.5}
+      - {x: -34.5, y: -83.5}
+      - {x: -34.5, y: -68.5}
+      - {x: -43.5, y: -51.5}
+    - - {x: -96.5, y: -50.5}
+      - {x: -103.5, y: -67.5}
+      - {x: -103.5, y: -82.5}
+      - {x: -73.5, y: -82.5}
+      - {x: -73.5, y: -61.5}
+      - {x: -80.5, y: -50.5}
+    - - {x: -5.5, y: -52.5}
+      - {x: -14.5, y: -52.5}
+      - {x: -28.5, y: -69.5}
+      - {x: -28.5, y: -74.5}
+      - {x: -25.5, y: -80.5}
+      - {x: -20.5, y: -81.5}
+      - {x: 1.5, y: -81.5}
+      - {x: 4.5, y: -74.5}
+      - {x: 4.5, y: -66.5}
+      - {x: 3.5, y: -63.5}
+    - - {x: 27.5, y: -52.5}
+      - {x: 16.5, y: -65.5}
+      - {x: 16.5, y: -76.5}
+      - {x: 19.5, y: -81.5}
+      - {x: 41.5, y: -81.5}
+      - {x: 46.5, y: -72.5}
+      - {x: 46.5, y: -61.5}
+      - {x: 37.5, y: -52.5}
+    - - {x: 68.5, y: -55.5}
+      - {x: 54.5, y: -55.5}
+      - {x: 47.5, y: -65.5}
+      - {x: 47.5, y: -81.5}
+      - {x: 77.5, y: -81.5}
+      - {x: 78.5, y: -79.5}
+      - {x: 78.5, y: -69.5}
+      - {x: 77.5, y: -66.5}
+    - - {x: 106.5, y: -58.5}
+      - {x: 90.5, y: -58.5}
+      - {x: 80.5, y: -61.5}
+      - {x: 80.5, y: -72.5}
+      - {x: 83.5, y: -81.5}
+      - {x: 107.5, y: -81.5}
+      - {x: 112.5, y: -78.5}
+      - {x: 112.5, y: -72.5}
+      - {x: 111.5, y: -69.5}
+    - - {x: 137.5, y: -58.5}
+      - {x: 121.5, y: -58.5}
+      - {x: 112.5, y: -66.5}
+      - {x: 112.5, y: -74.5}
+      - {x: 115.5, y: -81.5}
+      - {x: 140.5, y: -81.5}
+      - {x: 144.5, y: -78.5}
+      - {x: 144.5, y: -69.5}
+      - {x: 140.5, y: -59.5}
+    - - {x: -96.5, y: -15.5}
+      - {x: -103.5, y: -29.5}
+      - {x: -103.5, y: -45.5}
+      - {x: -73.5, y: -45.5}
+      - {x: -73.5, y: -25.5}
+      - {x: -81.5, y: -15.5}
+    - - {x: -27.5, y: -41.5}
+      - {x: -26.5, y: -42.5}
+      - {x: 5.5, y: -42.5}
+      - {x: 5.5, y: -21.5}
+      - {x: 0.5, y: -13.5}
+      - {x: -10.5, y: -13.5}
+      - {x: -27.5, y: -22.5}
+    - - {x: -58.5, y: 30.5}
+      - {x: -58.5, y: -8.5}
+      - {x: -35.5, y: -8.5}
+      - {x: -35.5, y: 30.5}
+    - - {x: -98.5, y: 29.5}
+      - {x: -98.5, y: -4.5}
+      - {x: -96.5, y: -5.5}
+      - {x: -75.5, y: -5.5}
+      - {x: -75.5, y: 29.5}
+    - - {x: -17.5, y: 25.5}
+      - {x: -19.5, y: 24.5}
+      - {x: -19.5, y: -0.5}
+      - {x: -16.5, y: -3.5}
+      - {x: -13.5, y: -5.5}
+      - {x: 3.5, y: -5.5}
+      - {x: 3.5, y: 25.5}
+    - - {x: -131.5, y: 27.5}
+      - {x: -131.5, y: -4.5}
+      - {x: -108.5, y: -4.5}
+      - {x: -108.5, y: 27.5}
+    - - {x: 19.5, y: 27.5}
+      - {x: 19.5, y: -4.5}
+      - {x: 42.5, y: -4.5}
+      - {x: 42.5, y: 27.5}
+    - - {x: 50.5, y: 26.5}
+      - {x: 50.5, y: -3.5}
+      - {x: 73.5, y: -3.5}
+      - {x: 73.5, y: 26.5}
+    - - {x: 85.5, y: -1.5}
+      - {x: 86.5, y: -3.5}
+      - {x: 106.5, y: -3.5}
+      - {x: 108.5, y: -2.5}
+      - {x: 108.5, y: 24.5}
+      - {x: 85.5, y: 24.5}
+    - - {x: 118.5, y: 24.5}
+      - {x: 118.5, y: -1.5}
+      - {x: 120.5, y: -2.5}
+      - {x: 136.5, y: -2.5}
+      - {x: 141.5, y: -0.5}
+      - {x: 141.5, y: 24.5}
+    - - {x: -99.5, y: 70.5}
+      - {x: -99.5, y: 45.5}
+      - {x: -97.5, y: 36.5}
+      - {x: -77.5, y: 36.5}
+      - {x: -76.5, y: 39.5}
+      - {x: -74.5, y: 56.5}
+      - {x: -74.5, y: 70.5}
+    - - {x: -20.5, y: 69.5}
+      - {x: -20.5, y: 37.5}
+      - {x: 2.5, y: 37.5}
+      - {x: 2.5, y: 69.5}
+    - - {x: -112.5, y: 113.5}
+      - {x: -133.5, y: 113.5}
+      - {x: -133.5, y: 88.5}
+      - {x: -131.5, y: 83.5}
+      - {x: -115.5, y: 83.5}
+      - {x: -110.5, y: 90.5}
+      - {x: -110.5, y: 111.5}
+    - - {x: -100.5, y: 114.5}
+      - {x: -100.5, y: 90.5}
+      - {x: -98.5, y: 83.5}
+      - {x: -77.5, y: 83.5}
+      - {x: -77.5, y: 114.5}
+    - - {x: -52.5, y: 118.5}
+      - {x: -59.5, y: 115.5}
+      - {x: -59.5, y: 94.5}
+      - {x: -55.5, y: 83.5}
+      - {x: -38.5, y: 83.5}
+      - {x: -36.5, y: 90.5}
+      - {x: -36.5, y: 117.5}
+      - {x: -37.5, y: 118.5}
+    - - {x: 16.5, y: 113.5}
+      - {x: 16.5, y: 86.5}
+      - {x: 20.5, y: 83.5}
+      - {x: 34.5, y: 83.5}
+      - {x: 39.5, y: 88.5}
+      - {x: 39.5, y: 113.5}
+    - - {x: 48.5, y: 112.5}
+      - {x: 48.5, y: 90.5}
+      - {x: 52.5, y: 85.5}
+      - {x: 70.5, y: 85.5}
+      - {x: 71.5, y: 91.5}
+      - {x: 71.5, y: 112.5}
+    - - {x: -21.5, y: 115.5}
+      - {x: -23.5, y: 114.5}
+      - {x: -23.5, y: 89.5}
+      - {x: -21.5, y: 86.5}
+      - {x: -1.5, y: 86.5}
+      - {x: -0.5, y: 87.5}
+      - {x: -0.5, y: 115.5}
+    - - {x: 102.5, y: 113.5}
+      - {x: 89.5, y: 113.5}
+      - {x: 82.5, y: 110.5}
+      - {x: 82.5, y: 94.5}
+      - {x: 87.5, y: 86.5}
+      - {x: 101.5, y: 86.5}
+      - {x: 105.5, y: 92.5}
+      - {x: 105.5, y: 112.5}
+    - - {x: 122.5, y: 113.5}
+      - {x: 115.5, y: 111.5}
+      - {x: 115.5, y: 90.5}
+      - {x: 116.5, y: 86.5}
+      - {x: 138.5, y: 86.5}
+      - {x: 138.5, y: 112.5}
+      - {x: 134.5, y: 113.5}
+    - - {x: -100.5, y: 150.5}
+      - {x: -100.5, y: 118.5}
+      - {x: -78.5, y: 118.5}
+      - {x: -77.5, y: 121.5}
+      - {x: -77.5, y: 143.5}
+      - {x: -78.5, y: 150.5}
+    - - {x: -24.5, y: 146.5}
+      - {x: -24.5, y: 119.5}
+      - {x: -0.5, y: 119.5}
+      - {x: 0.5, y: 123.5}
+      - {x: 0.5, y: 146.5}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
