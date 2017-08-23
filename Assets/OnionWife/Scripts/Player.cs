@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-  public Player Initialize() {
+  public Player Initialize(Action<Transform> group) {
+    this.group = group;
     ownRigidbody = GetComponent<Rigidbody>();
     return this;
   }
@@ -18,6 +20,7 @@ public class Player : MonoBehaviour {
       Transform bulletTransform = Instantiate(bulletPrefab).transform;
       bulletTransform.position = transform.position;
       bulletTransform.GetComponent<Bullet>().Initialize().Shoot(translatedHeading.normalized, 20, 3);
+      this.group(bulletTransform);
     }
     if (Input.GetKeyDown(KeyCode.E)) {
       if (inPickup) {
@@ -55,4 +58,5 @@ public class Player : MonoBehaviour {
   private const float maxSpeed = 4;
 
   private bool inPickup = false;
+  private Action<Transform> group;
 }

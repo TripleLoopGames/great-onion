@@ -28,7 +28,8 @@ public class Main : MonoBehaviour {
 
   private Main InitalizePlayer() {
     player = FindAndGetComponent<Player>("Player");
-    player.Initialize();
+    Transform bulletsGroup = FindGameobject("Bullets").GetComponent<Transform>();
+    player.Initialize((bullet) => bullet.SetParent(bulletsGroup));
     return this;
   }
 
