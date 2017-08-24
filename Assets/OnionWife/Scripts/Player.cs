@@ -29,6 +29,8 @@ public class Player : MonoBehaviour {
       if (inPickup) {
         bool pickedUp = currentPickup.PickUp();
         if(pickedUp){
+          currentPickup = null;
+          inPickup = false;
           ammunition++;
           this.onAmmunitionChange(ammunition);
         }
