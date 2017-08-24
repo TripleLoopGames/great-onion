@@ -9,7 +9,8 @@ public class Main : MonoBehaviour {
     InitalizeBunnySpawner()
       .InitalizePlantSpawner()
       .InitalizeOnionWife()
-      .InitalizePlayer();
+      .InitalizePlayer()
+      .InitalizeAmmunitionCounter();
     bunnySpawner.StartSpawnRoutine();
     plantSpawner.StartSpawnRoutine();
     return this;
@@ -38,7 +39,13 @@ public class Main : MonoBehaviour {
   private Main InitalizePlayer() {
     player = FindAndGetComponent<Player>("Player");
     Transform bulletsGroup = FindGameobject("Bullets").GetComponent<Transform>();
-    player.Initialize((bullet) => bullet.SetParent(bulletsGroup), (ammunition => Debug.Log(ammunition)));
+    player.Initialize((bullet) => bullet.SetParent(bulletsGroup), (ammunition => ammunitionCounter.setAmount(ammunition)));
+    return this;
+  }
+
+  private Main InitalizeAmmunitionCounter() {
+    ammunitionCounter = FindAndGetComponent<AmmunitionCounter>("Ammunition_Counter");
+    ammunitionCounter.Initialize();
     return this;
   }
 
@@ -64,6 +71,7 @@ public class Main : MonoBehaviour {
   }
 
   private BunnySpawner bunnySpawner;
+  private AmmunitionCounter ammunitionCounter;
   private PlantSpawner plantSpawner;
   private OnionWife onionWife;
   private Player player;
