@@ -11,18 +11,18 @@ public class Plant : MonoBehaviour {
     return this;
   }
 
-  public Plant PickUp() {
+  public bool PickUp() {
     if (growth == Growth.InProgress) {
-      return this;
+      return false;
     }
     if (growth == Growth.None) {
       animator.SetInteger("Growth", 1);
       growth = Growth.InProgress;
-      return this;
+      return false;
     }
     this.onPickup();
     Destroy(gameObject);
-    return this;
+    return true;
   }
 
   public Plant onGrowthComplete() {
