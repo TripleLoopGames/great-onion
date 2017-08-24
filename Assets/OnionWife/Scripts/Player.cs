@@ -24,7 +24,7 @@ public class Player : MonoBehaviour {
     }
     if (Input.GetKeyDown(KeyCode.E)) {
       if (inPickup) {
-        //currentPickup.PickUp();
+        currentPickup.PickUp();
       }
     }
     currentDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
@@ -34,16 +34,16 @@ public class Player : MonoBehaviour {
     ownRigidbody.velocity = currentDirection * speed;
   }
 
-  private void OnTriggerEnter2D(Collider2D collision) {
-    if (collision.CompareTag("PickUp")) {
-      //currentPickup = collision.GetComponent<Plant>();
+  private void OnTriggerEnter(Collider collision) {
+    if (collision.CompareTag("Plant")) {
+      currentPickup = collision.GetComponent<Plant>();
       inPickup = true;
     }
   }
 
-  private void OnTriggerExit2D(Collider2D collision) {
-    if (collision.CompareTag("PickUp")) {
-      //currentPickup = null;
+  private void OnTriggerExit(Collider collision) {
+    if (collision.CompareTag("Plant")) {
+      currentPickup = null;
       inPickup = false;
     }
   }
@@ -52,7 +52,7 @@ public class Player : MonoBehaviour {
 
   private Vector3 currentDirection;
   private Rigidbody ownRigidbody;
-  //private Plant currentPickup;
+  private Plant currentPickup;
 
   private const float speed = 10;
   private const float maxSpeed = 4;

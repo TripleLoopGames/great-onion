@@ -7,9 +7,11 @@ public class Main : MonoBehaviour {
 
   private Main Initialize() {
     InitalizeBunnySpawner()
+      .InitalizePlantSpawner()
       .InitalizeOnionWife()
       .InitalizePlayer();
     bunnySpawner.StartSpawnRoutine();
+    plantSpawner.StartSpawnRoutine();
     return this;
   }
 
@@ -17,6 +19,13 @@ public class Main : MonoBehaviour {
     bunnySpawner = FindAndGetComponent<BunnySpawner>("Bunny_Spawner");
     Transform bunniesGroup = FindGameobject("Bunnies").GetComponent<Transform>();
     bunnySpawner.Initialize((bunny) => bunny.SetParent(bunniesGroup));
+    return this;
+  }
+
+  private Main InitalizePlantSpawner() {
+    plantSpawner = FindAndGetComponent<PlantSpawner>("Plant_Spawner");
+    Transform plantsGroup = FindGameobject("Plants").GetComponent<Transform>();
+    plantSpawner.Initialize((plant) => plant.SetParent(plantsGroup));
     return this;
   }
 
@@ -55,6 +64,7 @@ public class Main : MonoBehaviour {
   }
 
   private BunnySpawner bunnySpawner;
+  private PlantSpawner plantSpawner;
   private OnionWife onionWife;
   private Player player;
 }

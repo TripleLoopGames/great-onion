@@ -51,7 +51,8 @@ public class BunnySpawner : MonoBehaviour {
     return spawnPoints[randomIndex].position;
   }
 
-  public GameObject bunnyPrefab;
+  [SerializeField]
+  private GameObject bunnyPrefab;
   private Transform[] spawnPoints;
   private bool spawning = false;
   private IEnumerator spawnCorutine;
