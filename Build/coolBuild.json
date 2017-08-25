@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "coolBuild.data.unityweb",
+"asmCodeUrl": "coolBuild.asm.code.unityweb",
+"asmMemoryUrl": "coolBuild.asm.memory.unityweb",
+"asmFrameworkUrl": "coolBuild.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
