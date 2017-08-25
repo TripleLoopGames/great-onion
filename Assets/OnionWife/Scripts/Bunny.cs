@@ -27,8 +27,8 @@ public class Bunny : MonoBehaviour {
   private IEnumerator AttackPhase(){
       Health health = target.GetComponent<Health>();
       while(true){
+        yield return new WaitForSeconds(2f);
         health.Substract(1);
-        yield return new WaitForSeconds(0.5f);
       }
   }
 
@@ -41,6 +41,7 @@ public class Bunny : MonoBehaviour {
   }
 
   private Bunny Die() {
+    StopAllCoroutines();
     Transform particles = Instantiate(bunnyParticles).transform;
     particles.position = transform.position;
     Destroy(gameObject);

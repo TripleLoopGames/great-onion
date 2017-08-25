@@ -28,12 +28,22 @@ public class Player : MonoBehaviour {
     if (Input.GetKeyDown(KeyCode.E)) {
       if (inPickup) {
         bool pickedUp = currentPickup.PickUp();
-        if(pickedUp){
+        if (pickedUp) {
           currentPickup = null;
           inPickup = false;
           ammunition++;
           this.onAmmunitionChange(ammunition);
         }
+      }
+      watering = true;
+      if (inOnionWife) {
+        onionWife.StartWatering();
+      }
+    }
+    if (Input.GetKeyUp(KeyCode.E)) {
+      watering = false;
+      if (inOnionWife) {
+        onionWife.StopWatering();
       }
     }
     currentDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
@@ -48,12 +58,26 @@ public class Player : MonoBehaviour {
       currentPickup = collision.GetComponent<Plant>();
       inPickup = true;
     }
+    if (collision.CompareTag("Onion")) {
+      inOnionWife = true;
+      onionWife = collision.GetComponent<OnionWife>();
+      if (watering) {
+        onionWife.StartWatering();
+      }
+    }
   }
 
   private void OnTriggerExit(Collider collision) {
     if (collision.CompareTag("Plant")) {
       currentPickup = null;
       inPickup = false;
+    }
+    if (collision.CompareTag("Onion")) {
+      inOnionWife = false;
+      if (watering) {
+        onionWife.StopWatering();
+      }
+      onionWife = null;
     }
   }
 
@@ -63,11 +87,17 @@ public class Player : MonoBehaviour {
   private Rigidbody ownRigidbody;
   private Plant currentPickup;
 
-  private const float speed = 10;
+  private OnionWife onionWife;
+
+  private const float speed = 20;
   private const float maxSpeed = 4;
 
   private bool inPickup = false;
+  private bool inOnionWife = false;
+
+  private bool watering = false;
   private Action<Transform> group;
   private Action<int> onAmmunitionChange;
+
   private int ammunition = 0;
 }

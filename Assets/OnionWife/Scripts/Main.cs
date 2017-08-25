@@ -10,7 +10,8 @@ public class Main : MonoBehaviour {
       .InitalizePlantSpawner()
       .InitalizeOnionWife()
       .InitalizePlayer()
-      .InitalizeAmmunitionCounter();
+      .InitalizeAmmunitionCounter()
+      .InitalizeWaterCounter();
     bunnySpawner.StartSpawnRoutine();
     plantSpawner.StartSpawnRoutine();
     return this;
@@ -26,26 +27,38 @@ public class Main : MonoBehaviour {
   private Main InitalizePlantSpawner() {
     plantSpawner = FindAndGetComponent<PlantSpawner>("Plant_Spawner");
     Transform plantsGroup = FindGameobject("Plants").GetComponent<Transform>();
-    plantSpawner.Initialize((plant) => plant.SetParent(plantsGroup));
+    plantSpawner.Initialize(plant => plant.SetParent(plantsGroup));
     return this;
   }
 
   private Main InitalizeOnionWife() {
     onionWife = FindAndGetComponent<OnionWife>("Onion_Wife");
-    onionWife.Initialize();
+    onionWife.Initialize(
+      growth => waterCounter.setAmount(growth),
+      () => bunnySpawner.StopSpawnRoutine()
+    );
     return this;
   }
 
   private Main InitalizePlayer() {
     player = FindAndGetComponent<Player>("Player");
     Transform bulletsGroup = FindGameobject("Bullets").GetComponent<Transform>();
-    player.Initialize((bullet) => bullet.SetParent(bulletsGroup), (ammunition => ammunitionCounter.setAmount(ammunition)));
+    player.Initialize(
+      (bullet) => bullet.SetParent(bulletsGroup),
+      (ammunition => ammunitionCounter.setAmount(ammunition))
+    );
     return this;
   }
 
   private Main InitalizeAmmunitionCounter() {
     ammunitionCounter = FindAndGetComponent<AmmunitionCounter>("Ammunition_Counter");
     ammunitionCounter.Initialize();
+    return this;
+  }
+
+  private Main InitalizeWaterCounter() {
+    waterCounter = FindAndGetComponent<WaterCounter>("Water_Counter");
+    waterCounter.Initialize();
     return this;
   }
 
@@ -72,6 +85,8 @@ public class Main : MonoBehaviour {
 
   private BunnySpawner bunnySpawner;
   private AmmunitionCounter ammunitionCounter;
+
+  private WaterCounter waterCounter;
   private PlantSpawner plantSpawner;
   private OnionWife onionWife;
   private Player player;
