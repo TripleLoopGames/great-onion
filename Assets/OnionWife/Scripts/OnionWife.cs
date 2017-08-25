@@ -7,6 +7,9 @@ public class OnionWife : MonoBehaviour {
   public OnionWife Initialize(Action<int> onGrowth, Action onDeath) {
     Health health = GetComponent<Health>();
     health.SetOnDeath(() => {
+      if(immortal){
+        return;
+      }
       Transform particles = Instantiate(deathParticles).transform;
       particles.position = transform.position;
       GetComponent<SpriteRenderer>().enabled = false;
@@ -45,7 +48,7 @@ public class OnionWife : MonoBehaviour {
     while (true && growth < 100) {
       growth++;
       onGrowth(growth);
-      yield return new WaitForSeconds(0.5f);
+      yield return new WaitForSeconds(0.4f);
     }
     immortal = true;
   }

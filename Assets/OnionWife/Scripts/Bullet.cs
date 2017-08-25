@@ -36,7 +36,6 @@ public class Bullet : MonoBehaviour {
   }
 
   private void OnCollisionEnter(Collision collision) {
-    Debug.Log(collision.gameObject.tag);
     if (collision.gameObject.CompareTag("Ground") && !inGround) {
       inGround = true;
       timerComponent.StartTimer(1, () => Destroy(gameObject));

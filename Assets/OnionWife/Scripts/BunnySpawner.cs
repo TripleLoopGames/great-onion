@@ -21,6 +21,7 @@ public class BunnySpawner : MonoBehaviour {
       return this;
     }
     spawning = true;
+    StartCoroutine(gameTimer());
     spawnCorutine = spawnBunnies(spawnPoints);
     StartCoroutine(spawnCorutine);
     return this;
@@ -41,7 +42,19 @@ public class BunnySpawner : MonoBehaviour {
       Transform bunny = Instantiate(bunnyPrefab).transform;
       bunny.position = getRandomSpawnPoint(spawnPoints);
       group(bunny);
-      yield return new WaitForSeconds(Random.Range(1f, 3f));
+      int nextSpawnTime = 2;
+      flowState flowState = Array.Find(timeFlow, (time) => time.timeSpent > timeSpent);
+      if(flowState != null){
+        nextSpawnTime = flowState.timeLimit;
+      }
+      yield return new WaitForSeconds(Random.Range(nextSpawnTime - 2, nextSpawnTime));
+    }
+  }
+
+  private IEnumerator gameTimer() {
+    while (true) {
+      timeSpent++;
+      yield return new WaitForSeconds(1f);
     }
   }
 
@@ -51,6 +64,8 @@ public class BunnySpawner : MonoBehaviour {
     return spawnPoints[randomIndex].position;
   }
 
+  private int timeSpent = 0;
+
   [SerializeField]
   private GameObject bunnyPrefab;
   private Transform[] spawnPoints;
@@ -58,6 +73,11 @@ public class BunnySpawner : MonoBehaviour {
   private IEnumerator spawnCorutine;
   private Action<Transform> group;
 
-  // private int[] timeFlow = new int[] { 10, 30, 60, 80, 100 };
-  // private int[] bunnySpawnOffsets = new int[] { 20, 15, 10, 5, 2 };
+  private flowState[] timeFlow = new flowState[] {
+    new flowState { timeSpent = 10, timeLimit = 15 },
+    new flowState { timeSpent = 25, timeLimit = 12 },
+    new flowState { timeSpent = 50, timeLimit = 10 },
+    new flowState { timeSpent = 70, timeLimit = 8 },
+    new flowState { timeSpent = 100, timeLimit = 5 },
+  };
 }
