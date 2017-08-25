@@ -12,6 +12,11 @@ public class Player : MonoBehaviour {
     return this;
   }
 
+  public void AddAmunition(int amount) {
+    ammunition += amount;
+    onAmmunitionChange(ammunition);
+  }
+
   private void Update() {
     // Big hack to shot, should be located inside input controller and configurable
     if (Input.GetMouseButtonDown(0) && ammunition > 0) {
@@ -20,7 +25,7 @@ public class Player : MonoBehaviour {
       Vector3 translatedHeading = new Vector3(heading.x, 0, heading.y);
       Transform bulletTransform = Instantiate(bulletPrefab).transform;
       bulletTransform.position = transform.position;
-      bulletTransform.GetComponent<Bullet>().Initialize().Shoot(translatedHeading.normalized, 20, 3);
+      bulletTransform.GetComponent<Bullet>().Initialize(GetComponent<Collider>()).Shoot(translatedHeading.normalized, 20, 3);
       this.group(bulletTransform);
       ammunition--;
       this.onAmmunitionChange(ammunition);

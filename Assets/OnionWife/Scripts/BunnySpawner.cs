@@ -38,7 +38,7 @@ public class BunnySpawner : MonoBehaviour {
 
   private IEnumerator spawnBunnies(Transform[] spawnPoints) {
     while (true) {
-      Transform bunny = Instantiate(bunnyPrefab).transform;      
+      Transform bunny = Instantiate(bunnyPrefab).transform;
       bunny.position = getRandomSpawnPoint(spawnPoints);
       group(bunny);
       yield return new WaitForSeconds(Random.Range(1f, 3f));
@@ -57,4 +57,7 @@ public class BunnySpawner : MonoBehaviour {
   private bool spawning = false;
   private IEnumerator spawnCorutine;
   private Action<Transform> group;
+
+  // private int[] timeFlow = new int[] { 10, 30, 60, 80, 100 };
+  // private int[] bunnySpawnOffsets = new int[] { 20, 15, 10, 5, 2 };
 }
